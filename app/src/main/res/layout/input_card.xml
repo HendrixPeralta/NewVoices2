@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Publica Tu articulo"
+                android:text="@string/publica_tu_articulo"
                 android:gravity="left"
                 android:textColor="#121212"
                 android:textSize="18sp"
@@ -35,7 +35,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
-                android:hint="Titulo"
+                android:hint="@string/titulo"
                 android:layout_width="match_parent"
                 android:layout_weight="4"
                 android:layout_height="wrap_content" />
@@ -46,7 +46,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
-                android:hint="Descripcion"
+                android:hint="@string/descripcion"
                 android:layout_width="match_parent"
                 android:layout_weight="4"
                 android:layout_height="wrap_content" />

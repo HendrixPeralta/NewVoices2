@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 mNewsModelsResult.add(dataSnapshot.getValue(NewsModel.class));
                 mNewsAdapter.notifyDataSetChanged();
+                progressBar.setVisibility(View.INVISIBLE);
             }
 
             @Override
@@ -173,7 +174,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        progressBar.setVisibility(View.INVISIBLE);
     }
 
     private void onSignedInInitialize(String displayName) {

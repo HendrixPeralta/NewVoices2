@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">New Voices</string>
+    <string name="publica_tu_articulo">Publica Tu articulo</string>
+    <string name="titulo">Titulo</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="date_place_holder">DD/MM/YYYY</string>
+    <string name="adress_place_holder">adress</string>
+    <string name="description_place_holder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor a est sed maximus. Morbi et hendrerit urna.</string>
+    <string name="category_place_holder">Category</string>
+    <string name="username_place_holder">by Username</string>
+    <string name="title_place_holder">Title place holder</string>
 
     <string-array name="category_array">
         <item>Farandula</item>

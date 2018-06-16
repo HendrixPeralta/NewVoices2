@@ -106,9 +106,9 @@ public class NewsDataCollector extends AppCompatActivity implements AdapterView.
 
         date = Calendar.getInstance().getTime();
         postDate = DateFormat.getDateInstance(DateFormat.FULL).format(date);
-//        Toast.makeText(this, postDate, Toast.LENGTH_LONG).show();
 
-        new RetrieveData().execute();
+//        new RetrieveData().execute();
+        GetLocation();
 
         postImageImageButton.setOnClickListener(view ->{
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
@@ -129,7 +129,7 @@ public class NewsDataCollector extends AppCompatActivity implements AdapterView.
                     new NewsModel(postTitle, postAddress, postDate, postCategory, userName, postDescription, postImge);
             databaseReference.push().setValue(newsModel);
             pushNotification("Nuevo Contenido", postTitle);
-//            Log.d("PostAddress", postImge);
+
             finish();
         });
     }
@@ -149,6 +149,7 @@ public class NewsDataCollector extends AppCompatActivity implements AdapterView.
         notificationManager.notify(1, builder.build());
 
     }
+
     public void GetLocation(){
 
         FusedLocationProviderClient locationProviderClient =
@@ -160,8 +161,6 @@ public class NewsDataCollector extends AppCompatActivity implements AdapterView.
         LocationCallback locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(LocationResult locationResult) {
-                List<Location> locations = locationResult.getLocations();
-                Location lastLocation = locationResult.getLastLocation();
             }
         };
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
