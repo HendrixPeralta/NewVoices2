@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">New Voices</string>
+
+    <string-array name="category_array">
+        <item>Farandula</item>
+        <item>Deportes</item>
+        <item>Economia</item>
+    </string-array>
+
+</resources>
